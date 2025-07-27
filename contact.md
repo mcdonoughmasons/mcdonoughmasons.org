@@ -1,8 +1,40 @@
 ---
-layout: page
+layout: none
 title: "Contact"
 permalink: /contact/
 ---
+
+<!-- Site-wide navigation and basic styling -->
+<style>
+  nav {
+    background-color: #003f87;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  nav a:hover {
+    background-color: #00265c;
+    color: #fff;
+  }
+</style>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/officers.html">Officers</a>
+  <a href="/past-masters.html">Past&nbsp;Masters</a>
+  <a href="/membership-dues/">Membership&nbsp;Dues</a>
+  <a href="/blog/">Blog</a>
+  <a href="/contact/">Contact</a>
+</nav>
 
 <p>Email: <a href="mailto:fraternal37fam@gmail.com" rel="noreferrer noopener" target="_blank">fraternal37fam@gmail.com</a></p>
 <p>Follow us on Facebook: <a href="https://www.facebook.com/fraternal37" rel="noreferrer noopener" target="_blank">https://www.facebook.com/fraternal37</a></p>

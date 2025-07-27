@@ -1,8 +1,40 @@
 ---
-layout: page
+layout: none
 title: "Membership Dues"
 permalink: /membership-dues/
 ---
+
+<!-- Site-wide navigation and basic styling -->
+<style>
+  nav {
+    background-color: #003f87;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  nav a:hover {
+    background-color: #00265c;
+    color: #fff;
+  }
+</style>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/officers.html">Officers</a>
+  <a href="/past-masters.html">Past&nbsp;Masters</a>
+  <a href="/membership-dues/">Membership&nbsp;Dues</a>
+  <a href="/blog/">Blog</a>
+  <a href="/contact/">Contact</a>
+</nav>
 
 <p>Dues must be paid in advance <strong>on or</strong> <strong>before April 30th</strong> of each year. You can use the convenient online payment method below and pay with your Paypal balance or Credit Card. </p>
 
