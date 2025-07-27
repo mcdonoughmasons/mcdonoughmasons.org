@@ -92,7 +92,18 @@
       padding: 1rem;
       border-radius: 0.5rem;
     }
-
+    .two-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+}
+    .two-columns .column {
+      flex: 1 1 250px;
+      background: rgba(255,255,255,0.4);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      min-width: 220px;
+}
     .stats {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -129,13 +140,47 @@
 
   <section class="section">
     <h3>Quick Facts About Us</h3>
-    <p>Under the leadership of our Worshipful Master, Jim Robinson, we are committed to fostering a welcoming environment where every Brother belongs. Guided by the timeless tenets of brotherly love, relief, and truth, we strive to live out our mission: respecting each other's unique contributions, promoting education to shape better men, and leaving the world better than we found it.</p>
+    <p>We are committed to fostering a welcoming environment where every Brother belongs. Guided by the timeless tenets of brotherly love, relief, and truth, we strive to live out our mission: respecting each other's unique contributions, promoting education to shape better men, and leaving the world better than we found it.</p>
     <div class="stats">
       <div class="stat"><strong>181</strong><br/>Years of Service</div>
       <div class="stat"><strong>Nov. 1844</strong><br/>Chartered</div>
       <div class="stat"><strong>6th</strong><br/>Masonic District</div>
     </div>
-  </section>
+<section class="section">
+  <h3>2021 Lodge Officers</h3>
+  <div class="three-columns">
+    <div class="column">
+      <strong>Worshipful Master</strong><br/>
+      WB. Jim Robinson<br/><br/>
+      <strong>Senior Warden</strong><br/>
+      Bro. Aaron Lunsford<br/><br/>
+      <strong>Junior Warden</strong><br/>
+      Bro. Richie Mobley<br/><br/>
+      <strong>Senior Deacon</strong><br/>
+      Bro. Larry Smith
+    </div>
+    <div class="column">
+      <strong>Junior Deacon</strong><br/>
+      Bro. Travis Wynes<br/><br/>
+      <strong>Secretary</strong><br/>
+      Bro. Ed Shulak<br/><br/>
+      <strong>Treasurer</strong><br/>
+      WB. Michael Register<br/><br/>
+      <strong>Senior Steward</strong><br/>
+      Bro. Walter Bedsole
+    </div>
+    <div class="column">
+      <strong>Junior Steward</strong><br/>
+      Bro. Jeff Davis<br/><br/>
+      <strong>Tyler</strong><br/>
+      Bro. Reade Herndon<br/><br/>
+      <strong>Director of Work/Children's Home Ambassador</strong><br/>
+      WB. Joey Martin<br/><br/>
+      <strong>Chaplain</strong><br/>
+      Bro. Jeff Hightower
+    </div>
+  </div>
+</section>
 
   <section class="section">
     <h3>Charity at Our Core</h3>
@@ -160,6 +205,8 @@
         <strong>The Masonic Journey</strong><br/><p>
         Becoming a Mason is not just joining an organization—it's embarking on a lifelong journey of self-improvement, fellowship, and service to others. Our degrees teach moral lessons through time-honored ceremonies.<br/><br/>
         <a class="button-group" href="https://glofga.org/how-to-become-a-mason/">How to become a Mason</a><br/>
+        <a class="button-group" href="mailto:fraternal37fam@gmail.com">Send us an email</a><br/>
+        <a class="button-group" href="https://www.facebook.com/fraternal37/">Follow us on Facebook</a>
     </div>
   </section>
 </body>
