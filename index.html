@@ -1,113 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fraternal Lodge No. 37 - McDonough Masons</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Libre Baskerville', serif;
-      margin: 0; padding: 0;
-      background: #1b1b1b; color: #f5f5f5;
-    }
-    header {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Square_and_Compasses.svg') center/80px no-repeat, #00274d;
-      color: white; padding: 3em 1em 1em; text-align: center;
-      background-blend-mode: multiply;
-    }
-    header h1 { margin: 0.3em 0 0; font-size: 2.2em; }
-    header p { margin: 0.2em 0 1em; font-style: italic; }
-    main {
-      max-width: 900px; margin: 2em auto;
-      padding: 2em; background: #2d2d2d;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    }
-    h2 {
-      color: #ffc107; border-bottom: 1px solid #444;
-      padding-bottom: 0.3em;
-    }
-    ul { padding-left: 1.2em; }
-    a.button {
-      display: inline-block; margin-top: 1em;
-      padding: 0.6em 1.2em; background: #ffc107; color: #1b1b1b;
-      text-decoration: none; border-radius: 5px;
-      font-weight: bold;
-    }
-    a { color: #90caf9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer {
-      text-align: center; padding: 2em 1em; font-size: 0.9em;
-      color: #aaa; background: #121212;
-    }
-    section { margin-bottom: 2em; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Fraternal Lodge No. 37</h1>
-    <p>Free and Accepted Masons - McDonough, Georgia</p>
-  </header>
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>Welcome to Fraternal Lodge No. 37, serving the McDonough community since 1844. We are a Masonic lodge committed to the tenets of brotherly love, relief, and truth. Our lodge is proud to uphold the traditions of Freemasonry while embracing new ways to serve our community.</p>
-    </section>
-
-    <section>
-      <h2>About Freemasonry</h2>
-      <p>Freemasonry is the world's oldest fraternal organization, dedicated to making good men better through moral and spiritual development, charitable work, and community involvement.</p>
-    </section>
-
-    <section>
-      <h2>Our History</h2>
-      <p>Fraternal Lodge No. 37 received its charter from the Grand Lodge of Georgia in 1844. As one of Georgia's oldest lodges, our history is deeply tied to the foundation and growth of McDonough and Henry County.</p>
-    </section>
-
-    <section>
-      <h2>Meetings</h2>
-      <p>We meet on the 1st and 3rd Thursdays of each month at 7:30 PM.<br>
-      Fellowship and dinner begin at 6:30 PM.</p>
-      <p><strong>Location:</strong> 65 Veterans Drive, McDonough, GA 30253<br>
-      <strong>Mailing:</strong> P.O. Box 3355, McDonough, GA 30253</p>
-    </section>
-
-    <section>
-      <h2>Officers for 2025</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fraternal Lodge No. 37 &mdash; Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <a href="index.html" class="logo">Fraternal&nbsp;Lodge&nbsp;No.&nbsp;37</a>
+      <span class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</span>
       <ul>
-        <li>Worshipful Master – Jim Robinson</li>
-        <li>Senior Warden – Aaron Lunsford</li>
-        <li>Junior Warden – Richie Mobley</li>
-        <li>Secretary – Ed Shulak</li>
-        <li>Treasurer – Michael Register</li>
-        <!-- Add full officer list here -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="officers.html">Officers</a></li>
+        <li><a href="past-masters.html">Past&nbsp;Masters</a></li>
+        <li><a href="dues.html">Dues&nbsp;&amp;&nbsp;Donations</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </section>
+      <!-- mobile nav placeholder; toggled via JavaScript -->
+      <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="officers.html">Officers</a>
+        <a href="past-masters.html">Past&nbsp;Masters</a>
+        <a href="dues.html">Dues&nbsp;&amp;&nbsp;Donations</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
 
-    <section>
-      <h2>Our Work</h2>
-      <p>We support local and statewide charitable initiatives, offer scholarships to local students, and contribute to the Masonic Home of Georgia. Through these efforts, we strive to improve the lives of our neighbors and uphold the values of Masonry.</p>
-    </section>
+    <!-- Hero section with glass overlay -->
+    <header class="hero">
+      <div class="hero-content glass">
+        <h1>Fraternal Lodge No. 37</h1>
+        <p>Building a legacy of brotherhood, education and charity since 1844.</p>
+        <a href="#welcome" class="btn">Learn More</a>
+      </div>
+    </header>
 
-    <section>
-      <h2>Stories & Reflections</h2>
-      <p><em>"A Little Lodge of Long Ago"</em> — A poetic reflection on the simplicity and values of our earlier days. <a href="https://fraternal-37.org/story/a-little-lodge-of-long-ago/" target="_blank">Read more</a></p>
-      <p><em>"I Am Proud to be a Freemason"</em> — A personal testimonial on what the Craft means to our members. <a href="https://fraternal-37.org/story/i-am-proud-to-be-a-freemason/" target="_blank">Read more</a></p>
-    </section>
+    <!-- Main content -->
+    <main class="container">
+      <!-- Welcome section summarising the lodge’s mission and values -->
+      <section id="welcome" class="section">
+        <h2>Welcome</h2>
+        <p>
+          Founded in 1844, Fraternal Lodge No.&nbsp;37 is a community of men
+          dedicated to building themselves and their world through
+          brotherly love, relief and truth. Under the leadership of
+          Worshipful Master Jim Robinson, we seek to preserve nearly two
+          centuries of tradition while embracing modern tools, to promote
+          education, practice charity and leave the world better than we
+          found it【947730938655990†L1070-L1082】.
+        </p>
+      </section>
 
-    <section>
-      <h2>Contact Us</h2>
-      <p>Interested in learning more or visiting our lodge?</p>
-      <p><strong>Email:</strong> <a href="mailto:fraternal37fam@gmail.com">Email us</a><br>
-      <strong>Facebook:</strong> <a href="https://www.facebook.com/Fraternal37" target="_blank">Fraternal Lodge No. 37</a></p>
-      <a href="https://www.facebook.com/Fraternal37" class="button">Visit Our Facebook Page</a>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 Fraternal Lodge No. 37, F.&A.M. All rights reserved.
-  </footer>
-</body>
+      <!-- What is Freemasonry? -->
+      <section id="what-is-freemasonry" class="section glass">
+        <h2>What is Freemasonry?</h2>
+        <p>
+          Freemasonry is more than an ancient fraternity &mdash; it’s a journey
+          of self‑discovery. Men of honor and integrity meet in our lodge to
+          become better husbands, fathers and citizens while giving back to
+          the communities they love. The craft encourages self‑reflection
+          and service, helping us to practice the values of equality, hope
+          and charity【947730938655990†L1098-L1107】.
+        </p>
+      </section>
+
+      <!-- History section -->
+      <section id="history" class="section">
+        <h2>Our History</h2>
+        <p>
+          Our lodge is part of an institution whose roots reach back to
+          medieval stonemasons and cathedral builders. Freemasonry is the
+          oldest fraternal organization in the world, and Georgia
+          freemasons trace their beginnings to between 1730 and 1734. The
+          Grand Lodge of Georgia was formally organized on December&nbsp;16,
+          1786【947730938655990†L1124-L1133】. Today, nearly 180 years after our charter,
+          Fraternal Lodge No.&nbsp;37 continues to uphold those traditions of
+          excellence and service.
+        </p>
+      </section>
+
+      <!-- News/Blog teasers -->
+      <section id="news" class="section glass">
+        <h2>Latest News</h2>
+        <div class="cards">
+          <a href="blog.html#chili" class="card">
+            <h3>Chili Cook‑Off at Fraternal</h3>
+            <p>
+              Attention, chili lovers! On Saturday, October 14th, 2023,
+              members and friends gathered at our lodge in McDonough to
+              taste delicious chili creations. Each ticket included a drink
+              and a raffle entry, with all proceeds supporting our
+              charitable efforts【848762403920015†L8-L16】.
+            </p>
+          </a>
+          <a href="blog.html#bridge" class="card">
+            <h3>The Bridge Builder</h3>
+            <p>
+              In this moving poem by Will Allen Dromgoole, an old man
+              builds a bridge across a chasm for those who follow,
+              reminding us that Past Masters laid the groundwork for the
+              future【249558912708886†L15-L28】. Read our tribute dedicated
+              to the Past Masters of Fraternal Lodge No.&nbsp;37.
+            </p>
+          </a>
+          <a href="blog.html#thankyou" class="card">
+            <h3>Thank You – See You at the Cook‑off!</h3>
+            <p>
+              A brief note of thanks to everyone who registered for our
+              chili competition. Your support helps make our events
+              successful and meaningful【133851417527003†L5-L11】.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Quick links -->
+      <section id="quick-links" class="section">
+        <h2>Get Involved</h2>
+        <div class="cards">
+          <a href="officers.html" class="card">
+            <h3>Officers</h3>
+            <p>Meet the Worshipful Master and officers guiding our lodge.</p>
+          </a>
+          <a href="past-masters.html" class="card">
+            <h3>Past Masters</h3>
+            <p>Honor the brethren who have previously served in the East.</p>
+          </a>
+          <a href="dues.html" class="card">
+            <h3>Dues &amp; Donations</h3>
+            <p>Support the lodge through membership dues and charitable giving.</p>
+          </a>
+          <a href="contact.html" class="card">
+            <h3>Get in Touch</h3>
+            <p>Find directions, meeting times and contact details.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with contact info -->
+    <footer>
+      <div class="footer-content">
+        <div class="address">
+          <p><strong>Mailing Address:</strong> P.O. Box 3355, McDonough, GA&nbsp;30253</p>
+          <p><strong>Building Address:</strong> 65 Veterans Drive, McDonough, GA&nbsp;30253</p>
+          <p><strong>Meeting Schedule:</strong> 1st &amp; 3rd Thursdays (except December)</p>
+        </div>
+        <div class="contact">
+          <p><strong>Email:</strong> <a href="mailto:fraternal37fam@gmail.com">fraternal37fam@gmail.com</a></p>
+          <p><a href="https://www.facebook.com/fraternal37">Visit us on Facebook</a></p>
+        </div>
+        <div class="copyright">
+          &copy; 2025 Fraternal Lodge No.&nbsp;37 F.&nbsp;&amp;&nbsp;A.M. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
