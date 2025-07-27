@@ -3,7 +3,7 @@ title: "Fraternal Lodge No. 37"
 email: "fraternal37fam@gmail.com"
 description: "Fraternal Lodge No. 37 - Freemasons in McDonough, GA"
 url: ""
-theme: "millennial"
+theme: ""
 markdown: kramdown
 plugins:
   - jekyll-paginate
