@@ -1,44 +1,52 @@
----
-layout: default
-title: Fraternal Lodge No. 37
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fraternal Lodge No. 37 - Free and Accepted Masons</title>
+  <title>Fraternal Lodge No. 37</title>
   <style>
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background: linear-gradient(to bottom, #0b1c3b, #0f2c5f);
+      background: #0b1c3b;
       color: white;
     }
+
     .hero {
-      background: url('/officers.jpg') center center / cover no-repeat;
-      height: 100vh;
+      background: linear-gradient(to bottom, rgba(11, 28, 59, 0.6), rgba(15, 44, 95, 0.9)),
+                  url('/officers.jpg') center center / cover no-repeat;
+      height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
     }
+
     .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 2rem;
-      border-radius: 1rem;
-      max-width: 600px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      padding: .5rem;
+      border-radius: 2rem;
+      max-width: 700px;
       text-align: center;
+      z-index: 3;
+      position: absolute;
+      max-height: 90%;
     }
+
     .overlay h2 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
     }
+
     .overlay p {
       font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: rem;
     }
+
     .button-group a {
       background-color: #3b82f6;
       color: white;
@@ -49,39 +57,48 @@ title: Fraternal Lodge No. 37
       font-weight: bold;
       display: inline-block;
     }
+
     .section {
       background: rgba(255, 255, 255, 0.05);
       margin: 2rem;
       padding: 2rem;
       border-radius: 1rem;
+      border-color: antiquewhite;
+      color: white;
     }
+
     .section h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
     }
+
     .section p {
       font-size: 1rem;
       line-height: 1.6;
     }
+
     .three-columns {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 1rem;
     }
+
     .column {
       flex: 1;
       min-width: 200px;
-      background: rgba(255, 255, 255, 0.07);
+      background: rgba(255, 255, 255, 0.4);
       padding: 1rem;
       border-radius: 0.5rem;
     }
+
     .stats {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 1rem;
       margin-top: 1rem;
     }
+
     .stat {
       background: rgba(255, 255, 255, 0.07);
       padding: 1rem;
@@ -93,12 +110,9 @@ title: Fraternal Lodge No. 37
 <body>
   <section class="hero">
     <div class="overlay">
-      <h2>Fraternal Lodge No. 37<br/><span style="color: #60a5fa;">Free & Accepted Masons</span></h2>
+      <h2><span style="color: #60a5fa;">Fraternal Lodge No. 37<br/></h2></span>
       <p>Welcome to the official website of Fraternal Lodge No. 37, a regular Lodge of Free and Accepted Masons chartered by the Grand Lodge of Georgia.<br/><br/>Since 1844, we have proudly upheld the principles of Freemasonry, dedicated to building a legacy of integrity, knowledge, and community service.</p>
-      <div class="button-group">
-        <a href="#">Learn About Membership</a>
-        <a href="#">Our History</a>
-      </div>
+      
     </div>
   </section>
 
@@ -113,13 +127,12 @@ title: Fraternal Lodge No. 37
   </section>
 
   <section class="section">
-    <h3>Under Leadership of Worshipful Master Jim Robinson</h3>
+    <h3>Quick Facts About Us</h3>
     <p>Under the leadership of our Worshipful Master, Jim Robinson, we are committed to fostering a welcoming environment where every Brother belongs. Guided by the timeless tenets of brotherly love, relief, and truth, we strive to live out our mission: respecting each other's unique contributions, promoting education to shape better men, and leaving the world better than we found it.</p>
     <div class="stats">
       <div class="stat"><strong>181</strong><br/>Years of Service</div>
-      <div class="stat"><strong>1844</strong><br/>Chartered</div>
-      <div class="stat"><strong>GA</strong><br/>Grand Lodge</div>
-      <div class="stat"><strong>37</strong><br/>Lodge Number</div>
+      <div class="stat"><strong>Nov. 1844</strong><br/>Chartered</div>
+      <div class="stat"><strong>6th</strong><br/>Masonic District</div>
     </div>
   </section>
 
@@ -134,24 +147,18 @@ title: Fraternal Lodge No. 37
     <p>Membership in Fraternal Lodge No. 37 is open to men who meet our requirements and share our values. Begin your journey of personal growth and service to humanity.</p>
     <div class="three-columns">
       <div class="column">
-        <strong>Requirements for Membership</strong><br/>
+        <strong>Requirements for Membership</strong><br/><p>
+        ✓ Upstanding citizen<br/>
         ✓ Be a man of at least 18 years of age<br/>
         ✓ Believe in a Supreme Being<br/>
         ✓ Be of good moral character<br/>
-        ✓ Come recommended by current members
+        ✓ Have a desire to improve yourself and those around you<br/>
+        ✓ Be prepared to obtain a background check if requested.<br/>
       </div>
       <div class="column">
-        <strong>The Masonic Journey</strong><br/>
+        <strong>The Masonic Journey</strong><br/><p>
         Becoming a Mason is not just joining an organization—it's embarking on a lifelong journey of self-improvement, fellowship, and service to others. Our degrees teach moral lessons through time-honored ceremonies.<br/><br/>
-        <a class="button-group" href="#">Request Information</a><br/>
-        <a class="button-group" href="#">Schedule a Visit</a>
-      </div>
-      <div class="column">
-        <strong>The Three Degrees of Masonry</strong><br/>
-        1. <strong>Entered Apprentice</strong><br/>The first degree introduces you to the basic principles of Freemasonry and begins your journey of self-improvement.<br/><br/>
-        2. <strong>Fellow Craft</strong><br/>The second degree focuses on education and the liberal arts, expanding your knowledge and understanding.<br/><br/>
-        3. <strong>Master Mason</strong><br/>The third degree completes your initiation and grants you full membership with all rights and privileges.
-      </div>
+        <a class="button-group" href="https://glofga.org/how-to-become-a-mason/">How to become a Mason</a><br/>
     </div>
   </section>
 </body>
