@@ -11,28 +11,8 @@
       background: linear-gradient(to bottom, #0b1c3b, #0f2c5f);
       color: white;
     }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 999;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1rem;
-    }
-    nav a {
-      margin-left: 1rem;
-      color: white;
-      text-decoration: none;
-    }
     .hero {
-      background: url('https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/486494621_1090426726447839_7853025309158076775_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=xnCvC3qpW3cQ7kNvwEzu4L0&_nc_oc=Adn4Z2rlkVl2uXCcxSL24Pn1C-yxcZiPXlspzaYNQ2DyAVBOt8b2NnMMLRYXyhvWTSw&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=HXWfOpNW6E-yfpIU_KJ_xg&oh=00_AfSjV7_05537HUNc2ETpxkzJ1ZV5mUuue2jomqhNN45aMg&oe=688C1CA3') center center / cover no-repeat;
+      background: url('https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/486494621_1090426726447839_7853025309158076775_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=xnCvC3qpW3cQ7kNvwEzu4L0&_nc_oc=Adn4Z2rlkVl2uXCcxSL24Pn1C-yxcZiPXlspzaYNQ2DyAVBOt8b2NnMMLRYXyhvWTSw&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=HXWfOpNW6E-yfpIU_KJ_xg&oh=00_AfSjV7_05537HUNc2ETpxkzJ1ZV5mUuue2jomqhNN45aMg&oe=688C1CA3') center top / cover no-repeat;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -63,27 +43,48 @@
       margin: 0 0.5rem;
       font-weight: bold;
     }
-    @media (max-width: 600px) {
-      .overlay h2 {
-        font-size: 1.5rem;
-      }
-      .overlay p {
-        font-size: 1rem;
-      }
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      margin: 2rem;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+    .section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .three-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .column {
+      flex: 1;
+      min-width: 200px;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .stat {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 1rem;
+      text-align: center;
+      border-radius: 0.5rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Fraternal Lodge No. 37</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Membership</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
   <section class="hero">
     <div class="overlay">
       <h2>Fraternal Lodge No. 37<br/><span style="color: #60a5fa;">Free & Accepted Masons</span></h2>
@@ -91,6 +92,59 @@
       <div class="button-group">
         <a href="#">Learn About Membership</a>
         <a href="#">Our History</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>What is Freemasonry?</h3>
+    <p>Freemasonry is a brotherhood of men committed to lives of honor, integrity, and character. The men of Freemasonry are on a journey of self-discovery. For hundreds of years, Freemasons, with deep brotherly support, have worked to become the best version of themselves while working to better their communities and our world.</p>
+    <div class="three-columns">
+      <div class="column">❤️<br/><strong>Brotherly Love</strong><br/>We practice tolerance and respect for the opinions of others and behave with kindness and understanding to our fellow creatures.</div>
+      <div class="column">🤝<br/><strong>Relief</strong><br/>We actively support our community through educator scholarships, relief to those in need, and support for the Masonic Home of Georgia.</div>
+      <div class="column">💎<br/><strong>Truth</strong><br/>We strive to be truthful in our dealings with others and endeavor to find truth through knowledge and education.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Under Leadership of Worshipful Master Jim Robinson</h3>
+    <p>Under the leadership of our Worshipful Master, Jim Robinson, we are committed to fostering a welcoming environment where every Brother belongs. Guided by the timeless tenets of brotherly love, relief, and truth, we strive to live out our mission: respecting each other's unique contributions, promoting education to shape better men, and leaving the world better than we found it.</p>
+    <div class="stats">
+      <div class="stat"><strong>181</strong><br/>Years of Service</div>
+      <div class="stat"><strong>1844</strong><br/>Chartered</div>
+      <div class="stat"><strong>GA</strong><br/>Grand Lodge</div>
+      <div class="stat"><strong>37</strong><br/>Lodge Number</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Charity at Our Core</h3>
+    <p>At Fraternal Lodge No. 37, charity is central to our identity. Inspired by the words of Brother Albert Pike—"What we do for others lives on"—we actively support our community. Whether it's assisting local schools through educator scholarships, providing relief to those in need, or supporting the Masonic Home of Georgia, we work to uplift and strengthen the bonds within our community.</p>
+    <p>Our vision reminds us to walk with purpose, seek knowledge, and take meaningful action. By embracing ancient traditions and modern tools, we ensure that Fraternal Lodge No. 37 remains a beacon of fellowship and a cornerstone of support for McDonough and its surrounding areas.</p>
+  </section>
+
+  <section class="section">
+    <h3>Learn About Becoming a Mason</h3>
+    <p>Membership in Fraternal Lodge No. 37 is open to men who meet our requirements and share our values. Begin your journey of personal growth and service to humanity.</p>
+    <div class="three-columns">
+      <div class="column">
+        <strong>Requirements for Membership</strong><br/>
+        ✓ Be a man of at least 18 years of age<br/>
+        ✓ Believe in a Supreme Being<br/>
+        ✓ Be of good moral character<br/>
+        ✓ Come recommended by current members
+      </div>
+      <div class="column">
+        <strong>The Masonic Journey</strong><br/>
+        Becoming a Mason is not just joining an organization—it's embarking on a lifelong journey of self-improvement, fellowship, and service to others. Our degrees teach moral lessons through time-honored ceremonies.<br/><br/>
+        <a class="button-group" href="#">Request Information</a><br/>
+        <a class="button-group" href="#">Schedule a Visit</a>
+      </div>
+      <div class="column">
+        <strong>The Three Degrees of Masonry</strong><br/>
+        1. <strong>Entered Apprentice</strong><br/>The first degree introduces you to the basic principles of Freemasonry and begins your journey of self-improvement.<br/><br/>
+        2. <strong>Fellow Craft</strong><br/>The second degree focuses on education and the liberal arts, expanding your knowledge and understanding.<br/><br/>
+        3. <strong>Master Mason</strong><br/>The third degree completes your initiation and grants you full membership with all rights and privileges.
       </div>
     </div>
   </section>
