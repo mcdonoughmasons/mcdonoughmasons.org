@@ -1,0 +1,21 @@
+---
+layout: page
+title: "Blog"
+permalink: /blog/
+---
+
+
+{% for post in paginator.posts %}
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  <p>Posted {{ post.date | date: "%B %-d, %Y" }}</p>
+  {{ post.excerpt | markdownify }}
+{% endfor %}
+
+<nav class="pagination" aria-label="Pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">Previous</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+  {% endif %}
+</nav>
