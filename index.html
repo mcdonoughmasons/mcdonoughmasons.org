@@ -1,29 +1,98 @@
----
-layout: default
-title: "Fraternal Lodge No. 37"
----
-
-<div class="hero" style="background: url('/assets/_images/square-compasses-bible.jpg') center/cover no-repeat;">
-  <div class="hero-overlay">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fraternal Lodge No. 37</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, #0b1c3b, #0f2c5f);
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/486494621_1090426726447839_7853025309158076775_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=xnCvC3qpW3cQ7kNvwEzu4L0&_nc_oc=Adn4Z2rlkVl2uXCcxSL24Pn1C-yxcZiPXlspzaYNQ2DyAVBOt8b2NnMMLRYXyhvWTSw&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&_nc_gid=HXWfOpNW6E-yfpIU_KJ_xg&oh=00_AfSjV7_05537HUNc2ETpxkzJ1ZV5mUuue2jomqhNN45aMg&oe=688C1CA3') center center / cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    .overlay h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .overlay p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .button-group a {
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      .overlay h2 {
+        font-size: 1.5rem;
+      }
+      .overlay p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
     <h1>Fraternal Lodge No. 37</h1>
-    <p>Serving McDonough since 1844 • Chartered under the Grand Lodge of Georgia</p>
-  </div>
-</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Membership</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-<div class="glass-box">
-  <p>Welcome to the official website of Fraternal Lodge No. 37, a regular Lodge of Free and Accepted Masons chartered by the Grand Lodge of Georgia. Since 1844, we have proudly upheld the principles of Freemasonry, dedicated to building a legacy of integrity, knowledge, and community service.</p>
-
-  <p>Under the leadership of our Worshipful Master, Jim Robinson, we are committed to fostering a welcoming environment where every Brother belongs. Guided by the timeless tenets of brotherly love, relief, and truth, we strive to live out our mission: respecting each other's unique contributions, promoting education to shape better men, and leaving the world better than we found it.</p>
-
-  <p>At Fraternal Lodge No. 37, charity is central to our identity. Inspired by the words of Brother Albert Pike—"What we do for others lives on"—we actively support our community. Whether it’s assisting local schools through educator scholarships, providing relief to those in need, or supporting the <a href="https://masonichomeofgeorgia.com/" rel="noopener" target="_blank" title="">Masonic Home of Georgia</a>, we work to uplift and strengthen the bonds within our community.</p>
-
-  <p>Our vision reminds us to walk with purpose, seek knowledge, and take meaningful action. By embracing ancient traditions and modern tools, we ensure that Fraternal Lodge No. 37 remains a beacon of fellowship and a cornerstone of support for McDonough and its surrounding areas​​.</p>
-
-  <h2>What is Freemasonry?</h2>
-  <p>Freemasonry is a brotherhood of men committed to lives of honor, integrity, and character. The men of Freemasonry are on a journey of self-discovery. For hundreds of years, Freemasons, with deep brotherly support, have worked to become the best version of themselves while working to better their communities and our world.</p>
-
-  <h2>Our History.</h2>
-  <p>Welcome to our Masonic Lodge, located in the heart of McDonough, in Georgia's Sixth Masonic District. We are proud of our 179-year history and commitment to our members and community.</p>
-  <p>Freemasonry is the oldest fraternal organization in the world. Though its origins are traced to the stonemasons and cathedral builders of Medieval times, Freemasonry remains a vital force in the daily lives of millions of men across the globe.</p>
-  <p>Masonry was introduced into our state about 1730-1734. In 1735, the Grand Lodge of England granted a Charter for a Lodge at Savannah. On December 16th, 1786, the Grand Lodge was organized.</p>
-</div>
+  <section class="hero">
+    <div class="overlay">
+      <h2>Fraternal Lodge No. 37<br/><span style="color: #60a5fa;">Free & Accepted Masons</span></h2>
+      <p>Welcome to the official website of Fraternal Lodge No. 37, a regular Lodge of Free and Accepted Masons chartered by the Grand Lodge of Georgia.<br/><br/>Since 1844, we have proudly upheld the principles of Freemasonry, dedicated to building a legacy of integrity, knowledge, and community service.</p>
+      <div class="button-group">
+        <a href="#">Learn About Membership</a>
+        <a href="#">Our History</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
