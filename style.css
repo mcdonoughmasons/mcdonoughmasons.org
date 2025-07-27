@@ -10,14 +10,15 @@
 
 /* Root variables make it easy to adjust the site’s color scheme */
 :root {
-  --primary: #0d2147;        /* Deep navy for headings and footers */
-  --secondary: #1f3a68;      /* Secondary blue for backgrounds */
-  --accent: #cfa65d;         /* Warm gold used for highlights and buttons */
-  --light: #f5f7fa;          /* Light grey base background */
-  --text-color: #333333;     /* Default dark text */
-  --glass-bg: rgba(255, 255, 255, 0.25); /* Translucent white for glass cards */
-  --glass-border: rgba(255, 255, 255, 0.4);
-  --glass-blur: 10px;
+  /* Dark mode colour palette inspired by the Athos template */
+  --primary: #ffffff;        /* Light headings and footers for contrast on dark backgrounds */
+  --secondary: #1a1a2e;      /* Rich dark blue base for backgrounds */
+  --accent: #4c8cf5;         /* Vibrant blue used for highlights and buttons */
+  --light: #0b0b0b;          /* Page background */
+  --text-color: #f0f0f0;     /* Light text colour */
+  --glass-bg: rgba(255, 255, 255, 0.05); /* Subtle glass effect */
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-blur: 8px;
   --border-radius: 16px;
   --max-content-width: 1100px;
   --nav-height: 60px;
@@ -49,14 +50,15 @@ nav {
   width: 100%;
   height: var(--nav-height);
   backdrop-filter: blur(var(--glass-blur));
-  background: rgba(13, 33, 71, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* Use a semi‑opaque dark background for navigation */
+  background: rgba(26, 26, 46, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  color: #ffffff;
+  color: var(--primary);
 }
 
 nav .logo {
@@ -77,7 +79,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -98,7 +100,10 @@ nav .menu-toggle {
 
 /* Hero section */
 .hero {
-  background: url('../images/hero.png') center/cover no-repeat;
+  /* Override the hero background to use the provided Unsplash photo.
+     The image illustrates Masonic tools on a holy book and ties into the lodge’s story.
+     If the remote image fails to load, a dark fallback colour is used. */
+  background: url('https://images.unsplash.com/photo-1682176162491-2e63972a1d9b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat, var(--secondary);
   min-height: 85vh;
   display: flex;
   align-items: center;
