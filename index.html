@@ -27,6 +27,12 @@
       }
     }
 
+    #facebook .fb-page { margin: 0 auto; }
+@media (max-width: 600px) {
+#facebook .fb-page { max-width: 100%; }
+  
+}
+
     .hero {
       background: linear-gradient(to bottom, rgba(11, 28, 59, 0.6), rgba(15, 44, 95, 0.9)),
                   url('https://images.unsplash.com/photo-1589820296156-2454bb8fd9a3') center center / cover no-repeat fixed;
@@ -195,12 +201,15 @@
   <h2 class="section-title">From the East</h2>
   <p>We don’t claim to have all the answers—but we do know where to start: together. As Master of Fraternal Lodge No. 37, I see men from every walk of life come through our doors searching for something more. And here, they find it—not in secret handshakes, but in shared purpose, challenge, and brotherhood.</p>
   <p>Freemasonry isn't about being perfect. It's about being present. If you’re ready to grow, to serve, and to walk with men who hold each other to a higher standard—we’ll leave the light on for you.</p>
-  <p><strong>— From the East,</strong><br>Jim Robinson, Worshipful Master</p>
+  <p><strong>— Fraternally,</strong><br>Jim Robinson, Worshipful Master</p>
   <div style="text-align: center;">
     <a class="btn" href="#officers">Meet Our Lodge</a>
   </div>
 </section>
 
+<!-- Facebook Posts -->
+<section id="facebook" class="fade-in"> <h2 class="section-title">Latest on Facebook</h2> <div class="fb-page" data-href="https://www.facebook.com/fraternal37" data-tabs="timeline" data-width="500" data-height="700" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"> <blockquote cite="https://www.facebook.com/fraternal37" class="fb-xfbml-parse-ignore"> <a href="https://www.facebook.com/fraternal37">Fraternal Lodge No. 37</a> </blockquote> </div> </section>
+  
 <!-- Officers -->
 <section id="officers" class="fade-in">
   <h2 class="section-title">2025 Lodge Officers</h2>
@@ -267,5 +276,6 @@
 <footer>
     <p>© 2025 Fraternal Lodge No. 37 | McDonough, GA | Est. 1844 | Chartered under the Grand Lodge of Georgia</p>
   </footer>
+  <div id="fb-root"></div> <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
 </body>
 </html>
