@@ -19,7 +19,7 @@
       justify-content: center;
       align-items: center;
       gap: 2rem;
-      padding-top: 1rem;
+      padding: 1rem 0 0 0;
     }
 
     .hero-header img {
@@ -40,30 +40,33 @@
     .hero {
       background: linear-gradient(to bottom, rgba(11, 28, 59, 0.6), rgba(15, 44, 95, 0.9)),
                   url('https://images.unsplash.com/photo-1589820296156-2454bb8fd9a3') center center / cover no-repeat fixed;
-      height: 100vh;
+      min-height: 85vh;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       text-align: center;
-      padding: 0 1rem;
+      padding: 1rem 1rem 0 1rem;
       position: relative;
     }
 
     .hero h2 {
       font-size: 2.8rem;
       font-family: 'EB Garamond', serif;
+      margin-top: 0.5rem;
       margin-bottom: 0.5rem;
       text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
     }
+
     .hero p {
       font-size: 1.3rem;
       margin-bottom: 1.5rem;
       text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
     }
+
     .hero-logo {
       width: 300px;
       max-width: 90vw;
-      margin-bottom: 1rem;
+      margin: 0;
     }
 
     .btn {
@@ -79,7 +82,7 @@
       transition: transform 0.2s ease;
       display: inline-block;
       text-align: center;
-      margin: 2rem auto 0 auto;
+      margin: 1rem auto 0 auto;
     }
     .btn:hover { transform: scale(1.05); }
 
@@ -92,6 +95,7 @@
       text-align: center;
       position: relative;
     }
+
     .section-title::after {
       content: '';
       display: block;
@@ -119,9 +123,8 @@
     }
 
     @media (max-width: 600px) {
-      .hero-header {
-        flex-direction: column;
-      }
+      .hero-header { flex-direction: column; }
+      .hero { min-height: auto; }
       .hero h2 { font-size: 2rem; }
       .hero p { font-size: 1rem; }
       .section-title { font-size: 1.6rem; }
@@ -144,6 +147,7 @@
       </div>
     </div>
   </div>
+  
   <section id="about" class="fade-in">
     <h2 class="section-title">What Is Freemasonry?</h2>
     <p>Freemasonry is the world’s oldest fraternity, built not on politics or profit, but on purpose. For over 300 years, it has brought men together to pursue truth, grow in character, and serve their communities.</p>
